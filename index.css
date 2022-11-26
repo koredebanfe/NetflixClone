@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 1.5;
+    margin: 0 auto;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-image: url(./img/bgImg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+    align-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1.5rem;
+}
+
+.nav__logo {
+    max-width: 100px;
+    height: 20px;
+}
+
+.nav__logo__signin a {
+    display: inline-block;
+    color: white;
+    margin-top: 2rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: red;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.header{
+    padding: 1.5rem;
+    border: none;
+    padding-bottom: 5rem;
+}
+
+h1, h2, h3, h4,h5,h6 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+[type="email"] {
+    padding: 1rem 2rem;
+}
+
+[type="submit"]{
+    padding: 0.5rem 1rem;
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.supported__devices {
+    padding: 2rem 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.supported__devices video {
+   max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+
+video {
+    max-width: 10vw;
+}
+
+.movie__download {
+    padding: 1.5rem;
+}
+
+.movie__download__content__section2{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 3rem;
+    background-color: black;
+    border-radius: 10px;
+    padding: 0 0.5rem;
+    border: 2px solid rgb(54, 53, 53);
+}
+
+.movie__download__content__section2__1 {
+    max-width: 50px;
+    height: auto;
+    align-self: center;
+}
+
+.movie__download__content__section2__2 p {
+    font-size: 0.9rem;
+}
+
+.movie__download__content__section2__2 {
+    align-self: center;
+}
+
+#download {
+    color: blue;
+    font-size: 0.7rem;
+}
+
+.movie__stream, 
+.kids__movie {
+    padding: 3rem 1.5rem;
+}
+
+.faq {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.faq__question {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    font-weight: 700;
+    background-color: rgb(54, 53, 53);
+    margin-bottom: 1rem;
+}
+
+.email__sub {
+    border-top: none;
+    padding: 1.5rem;
+}
+
+footer > section {
+    display: flex;
+    justify-content: space-between;
+    gap: 5vw;
+    flex-wrap: wrap;
+}
+
+footer > section {
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    
+}
+
+
+footer {
+    border-top: 10px solid rgb(54, 53, 53);
+    color: rgb(139, 138, 138);
+    font-size: 1rem;
+    padding: 3rem 1.5rem;
+    text-align: left;
+}
+
+footer h5 {
+    font-size: .9rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer a {
+    color: rgb(139, 138, 138);
+    font-size: .9rem;
+    text-decoration: none;
+    display: block;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+section {
+    border-top: 10px solid rgb(54, 53, 53);
+}
+
+
+@media screen and (max-width:768px) {
+    [type="submit"] {
+        display: inline-block;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width:800Px) {
+    .header,
+    .faq {
+        max-width: 50vw;
+        margin: 0 auto;
+    }
+
+    h1 {
+        
+        font-size: 3rem;
+        margin: 0 auto;
+    }
+
+    [type="submit"] {
+        padding: .9rem 2rem;
+    }
+
+    [type="email"] {
+        margin-left: -.5rem;
+    }
+
+    .supported__devices {
+        display: flex;
+        justify-content: space-between;
+        padding: 3rem;
+    }
+
+    .supported__devices div {
+        max-width: 30vw;
+        text-align: left;
+        align-self: center;
+    }
+
+    .movie__download {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        border-bottom: 10px solid rgb(54, 53, 53);
+    }
+
+    .movie__download__head{
+        max-width: 20vw;
+        align-self: center;
+        text-align: left;
+    }
+
+    .movie__download__content {
+        max-width: 25vw;
+    }
+
+    .movie__stream {
+        max-width: 30vw;
+        text-align: left;
+        border-top: none;
+    }
+
+    .kids__movie {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        text-align: left;
+        border-bottom: 10px solid rgb(54, 53, 53);
+    }
+
+    .kids__movie__content{
+        max-width: 30vw;
+    }
+
+    .faq {
+        border: none;
+    }
+
+    .faq h2 {
+        font-size: 1.5rem;
+    }
+
+    .kids__movie,
+    .movie__stream,
+    .movie__download,
+    .supported__devices,
+    footer {
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
+}
+
